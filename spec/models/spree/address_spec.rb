@@ -38,5 +38,19 @@ describe Spree::Address, type: :model do
         expect(address).to_not be_valid
       end
     end
+    context 'without a phone number' do
+      it 'is valid' do
+        address = Spree::Address.new(
+          street_no: '12a',
+          address1: 'Beispielstraße',
+          firstname: 'Hans',
+          lastname: 'Mustermann',
+          city: 'Hamburg',
+          zipcode: '22343',
+          country: create(:country)
+        )
+        expect(address).to be_valid
+      end
+    end
   end
 end
