@@ -1,0 +1,8 @@
+de:
+  activerecord:
+    attributes:
+      spree/address:
+        address1: Straße
+        street_no: Hausnummer
+  spree:
+    street_address: Straße

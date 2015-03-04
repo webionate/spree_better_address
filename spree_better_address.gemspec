@@ -7,8 +7,8 @@ Gem::Specification.new do |s|
   s.description = 'This extensions adds a street number attribute to the Spree address model'
   s.required_ruby_version = '>= 1.9.3'
 
-  # s.author    = 'You'
-  # s.email     = 'you@example.com'
+  s.author    = 'Jannik'
+  s.email     = 'jannik@webionate.de'
   s.homepage  = 'http://www.webionate.de'
 
   #s.files       = `git ls-files`.split("\n")
