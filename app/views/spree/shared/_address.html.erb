@@ -17,10 +17,10 @@
       <% end %>
     </div>
     <div class="local">
+      <span class="postal-code"><%= address.zipcode %></span>
       <span class="locality"><%= address.city %></span>
       <span class="region"><%= address.state_text %></span>
-      <span class="postal-code"><%= address.zipcode %></span>
-      <div class="country-name"><%= address.country.try(:name) %></div>
+      <div class="country-name"><%= Spree.t(address.country.iso, scope: 'country_names', default: address.country.name) %></div>
     </div>
   </div>
   <% unless address.phone.blank? %>
