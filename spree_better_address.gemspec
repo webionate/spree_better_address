@@ -2,10 +2,10 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_better_address'
-  s.version     = '0.0.1'
+  s.version     = '0.0.2'
   s.summary     = 'Extends the Spree address model'
   s.description = 'This extensions adds a street number attribute to the Spree address model'
-  s.required_ruby_version = '>= 1.9.3'
+  s.required_ruby_version = '>= 2.1.0'
 
   s.author    = 'Jannik'
   s.email     = 'jannik@webionate.de'
@@ -16,7 +16,9 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  s.add_dependency 'spree_core', '~> 2.4.2'
+  spree_version = '~> 3.0.0'
+
+  s.add_dependency 'spree_core', spree_version
 
   s.add_development_dependency 'capybara', '~> 2.4'
   s.add_development_dependency 'coffee-rails'
